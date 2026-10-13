@@ -7,3 +7,22 @@ function nombre_function(){
     let mensaje = "Inner Height: " + window.innerHeight + " Inner Width: " +  window.innerWidth + " Outer Height: " + window.outerHeight + " Inner Width: " + window.outerWidth; 
     alert(mensaje)
 }
+
+function reload(){
+    window.location.reload(); 
+}
+function volver(){
+    window.history.back(); 
+}
+
+
+
+window.setInterval
+
+function abrirVentana(){
+    window.open("https://es.wikipedia.org/wiki/JavaScript");
+}
+
+function cerrarVentana(){
+    window.close(); 
+}
