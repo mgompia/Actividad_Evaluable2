@@ -50,6 +50,13 @@ function mostrarInfo(){
     }else{
         alert(mensaje);; 
     }
-    
+}
 
+function comprobarTamanio(){
+    let anchoVentana = window.innerWidth; 
+    if(anchoVentana < 768){
+        document.getElementById("mensajeVentana").textContent = "Ventana pequeña " + anchoVentana;
+    }else{
+        document.getElementById("mensajeVentana").textContent = "Ventana grande " + anchoVentana;
+    }
 }
