@@ -17,7 +17,6 @@ function volver(){
 
 
 
-window.setInterval
 
 function abrirVentana(){
     window.open("https://es.wikipedia.org/wiki/JavaScript");
@@ -25,4 +24,17 @@ function abrirVentana(){
 
 function cerrarVentana(){
     window.close(); 
+}
+
+
+function cambiarColor(){
+    let colorUsuario = prompt("Introduce un color"); 
+    document.body.style.backgroundColor = colorUsuario; 
+    if(colorUsuario == ""){
+        document.getElementById("mensajeError").textContent = "Debes escribir bien el color para que funcione";
+    }else if(colorUsuario == null){
+        document.getElementById("mensajeError").textContent = "Cancelacion del cambio de color";
+    }else{
+        document.getElementById("mensajeError").textContent = "El color a sido cambiado a " + colorUsuario;
+    }
 }
