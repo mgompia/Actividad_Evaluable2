@@ -38,3 +38,18 @@ function cambiarColor(){
         document.getElementById("mensajeError").textContent = "El color a sido cambiado a " + colorUsuario;
     }
 }
+
+function mostrarInfo(){
+    let nombreUsuario = prompt("Introduce tu nombre"); 
+    let mensaje = "Bienvenido a la página " + nombreUsuario; 
+
+    if(nombreUsuario == ""){
+         alert("No has introducido tu nombre");
+    }else if(nombreUsuario == null){
+        alert("No has introducido tu nombre"); 
+    }else{
+        alert(mensaje);; 
+    }
+    
+
+}
